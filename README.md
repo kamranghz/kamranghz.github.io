@@ -15,11 +15,11 @@
 
 ## About Me
 
-I am a PhD candidate in Electrical and Computer Engineering at the **University of Ottawa**, conducting research at the **MCRLab** under the supervision of **Professor Abdulmotaleb El Saddik**. My dissertation, **CARE-AI** (*Coordinated, Agentic, Robust, Emotion-Aware AI*), addresses the design of intelligent systems that perceive the full human state — physiological, emotional, and physical — and respond with genuine, adaptive intelligence.
+I am a PhD candidate in Electrical and Computer Engineering at the **University of Ottawa**, conducting research at the **MCRLab** under the supervision of **Professor Abdulmotaleb El Saddik**. My dissertation, **CARE-AI** (*Coordinated, Agentic, Robust, Emotion-Aware AI*), addresses the design of intelligent systems that perceive the full human state — physiological, emotional, and physical and respond with genuine, adaptive intelligence.
 
-My research sits at the intersection of **Agentic AI**, **Digital Twin technology**, **Multimodal Perception**, and **Embodied AI** — building systems that don't just process data, but meaningfully act in both virtual and physical environments.
+My research sits at the intersection of **Agentic AI**, **Digital Twin technology**, **Multimodal Perception**, and **Embodied AI** building systems that don't just process data, but meaningfully act in both virtual and physical environments.
 
-Before my PhD, I spent five years as a **Software Developer & Blockchain Engineer (R&D)** at Sadad Informatics Corporation (SIC), one of Iran's largest financial technology companies, where I built enterprise-scale open-banking architectures, smart contract systems, and blockchain-based financial infrastructure.
+Before my PhD, I spent five years as a **Software Developer** at Sadad Informatics Corporation (SIC), one of Iran's largest financial technology companies, where I built enterprise-scale open-banking architectures.
 
 ---
 
@@ -121,8 +121,8 @@ Before my PhD, I spent five years as a **Software Developer & Blockchain Enginee
 > TA for: Real-Time Systems · Computer Architecture I · Project Management · WWW Structures · Cloud Technologies · Software Engineering Capstone Project
 
 ### Industry
-**Software Developer & Blockchain Engineer (R&D)** — Sadad Informatics Corporation, Tehran *(Oct 2017 – Sep 2022)*
-> Five years in R&D at one of Iran's largest fintech companies. Built open-banking microservice architectures (Java Spring Boot), Stellar and Ethereum blockchain systems, smart contracts, digital wallet platforms, and KYC identity frameworks.
+**Software Developer** — Sadad Informatics Corporation, Tehran *(Oct 2017 – Sep 2022)*
+> Five years in R&D at one of Iran's largest fintech companies. Built open-banking microservice architectures (Java Spring Boot).
 
 ---
 
