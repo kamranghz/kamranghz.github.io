@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kamran Gholizadeh HamlAbadi — Ph.D. Candidate & Research Engineer in Agentic AI, Digital Twins, and Physical AI Simulation. University of Ottawa." />
+  <meta name="keywords" content="Kamran Gholizadeh HamlAbadi, Agentic AI, Digital Twins, NVIDIA Omniverse, Isaac Sim, MCRLab, postdoc, AI researcher" />
+  <meta property="og:title" content="Kamran Gholizadeh HamlAbadi — Agentic & Physical AI" />
+  <meta property="og:description" content="Ph.D. Candidate · Research Engineer · Agentic AI · Digital Twins · NVIDIA Omniverse & Isaac Sim" />
+  <meta property="og:type" content="website" />
+  <title>Kamran Gholizadeh HamlAbadi — Agentic & Physical AI Researcher</title>
+
+  <!-- Fraunces (display serif) + Outfit (body sans) + JetBrains Mono (code/tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,600&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══════════════════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-wrap">
+      <a href="#hero" class="nav-logo">KGH</a>
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">About</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══ HERO ══════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <!-- Dot-grid SVG background -->
+      <div class="hero-dotgrid" aria-hidden="true"></div>
+      <!-- Floating accent blobs -->
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+      <div class="hero-wrap">
+        <!-- Photo -->
+        <div class="hero-photo-col" data-aos>
+          <div class="hero-photo-ring">
+            <div class="hero-photo-frame">
+              <img src="data:image/jpeg;base64,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" alt="Kamran Gholizadeh HamlAbadi" class="hero-img" />
+              <div class="hero-initials" id="heroInitials">KG</div>
+            </div>
+          </div>
+          <!-- Floating credential badge -->
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Open to Postdoc &amp; Industry Roles
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="hero-text-col">
+          <p class="hero-label" data-aos data-aos-delay="80">Ph.D. Candidate · University of Ottawa</p>
+          <h1 class="hero-name" data-aos data-aos-delay="140">
+            Kamran<br>Gholizadeh<br><em>HamlAbadi</em>
+          </h1>
+
+          <!-- Specialisms strip -->
+          <div class="hero-specs" data-aos data-aos-delay="200">
+            <span>Agentic &amp; Physical AI</span>
+            <i>·</i>
+            <span>Digital Twins</span>
+            <i>·</i>
+            <span>Reinforcement Learning</span>
+            <i>·</i>
+            <span>A2A / MCP</span>
+            <i>·</i>
+            <span>NVIDIA Omniverse &amp; Isaac Sim</span>
+          </div>
+
+          <p class="hero-statement" data-aos data-aos-delay="260">
+            I build AI systems that reason, act, and adapt inside physical and virtual worlds,
+            bridging <strong>agentic LLM reasoning</strong>, <strong>physics simulation</strong>,
+            and <strong>multimodal sensing</strong> to create reliable embodied intelligence.
+          </p>
+
+          <p class="hero-affil" data-aos data-aos-delay="300">
+            MCRLab, School of EECS · Supervised by
+            <strong>Prof. Abdulmotaleb El Saddik</strong>
+            <span class="hero-fellow">(IEEE / ACM / EIC Fellow)</span>
+          </p>
+
+          <div class="hero-actions" data-aos data-aos-delay="340">
+            <a href="mailto:kamran.gh@uottawa.ca" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email Me
+            </a>
+            <a href="https://scholar.google.com/citations?user=zC-HSXkAAAAJ" target="_blank" rel="noopener" class="btn btn-ghost">
+              Google Scholar ↗
+            </a>
+            <a href="https://kamranghz.github.io/" target="_blank" rel="noopener" class="btn btn-ghost">
+              Full CV ↗
+            </a>
+          </div>
+
+          <div class="hero-social" data-aos data-aos-delay="380">
+            <a href="https://github.com/kamranghz" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kamrangh" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://dl.acm.org/profile/99661339033" target="_blank" rel="noopener" aria-label="ACM">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </a>
+            <a href="https://orcid.org/0000-0002-4732-4745" target="_blank" rel="noopener" aria-label="ORCID">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-1.26 17.397H8.898V8.041h1.842v9.356zm-.921-10.617c-.59 0-1.068-.483-1.068-1.08 0-.597.478-1.08 1.068-1.08.591 0 1.069.483 1.069 1.08 0 .597-.478 1.08-1.069 1.08zm7.538 10.617h-1.842v-4.598c0-.709-.013-1.62-.987-1.62-.988 0-1.139.772-1.139 1.569v4.649h-1.84V9.863h1.766v1.009h.025c.246-.466.847-1.009 1.742-1.009 1.863 0 2.207 1.225 2.207 2.819l.068 4.715z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@kamranghz" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ABOUT ══════════════════════════════════════════════ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-left" data-aos>
+            <span class="eyebrow">About Me</span>
+            <h2 class="section-h">Building AI at the Edge of<br>the Physical and Virtual</h2>
+            <p>
+              I am a Ph.D. candidate at the <strong>Multimedia Communications Research Laboratory (MCRLab)</strong>,
+              University of Ottawa, working at the frontier of agentic AI, physical simulation,
+              and human–AI interaction. My research produces AI systems that operate reliably
+              in the real world, not just in benchmarks.
+            </p>
+            <p>
+              My doctoral work spans two connected threads: <strong>CARE-AI</strong>, an emotion-aware
+              Digital Twin framework for personalized coaching, and <strong>NemoForge</strong>,
+              a simulator-in-the-loop agentic system that rehabilitates physics violations
+              in neural 3D reconstructions for simulation-ready environments.
+            </p>
+            <p>
+              I have published at <strong>ACM Multimedia (CORE A*)</strong>, <strong>ACM TOMM (CORE A)</strong>,
+              <strong>ACM IMX</strong>, and <strong>IEEE MeMeA</strong>, received two international best paper awards,
+              and serve on the editorial boards of the IEEE Metaverse Newsletter and ACM SIGMM Record.
+            </p>
+          </div>
+
+          <div class="about-right" data-aos data-aos-delay="120">
+            <!-- Education card -->
+            <div class="info-card">
+              <h3 class="card-label">Education</h3>
+              <div class="edu-row">
+                <div class="edu-icon">🎓</div>
+                <div>
+                  <p class="edu-deg">Ph.D. · Electrical &amp; Computer Engineering</p>
+                  <p class="edu-school">University of Ottawa, Canada · 2022–Present</p>
+                  <p class="edu-note">Dissertation: <em>CARE-AI: Coordinated, Agentic, Robust, Emotion-Aware AI</em></p>
+                </div>
+              </div>
+              <div class="edu-row">
+                <div class="edu-icon">📖</div>
+                <div>
+                  <p class="edu-deg">M.Sc. · Information Technology Engineering</p>
+                  <p class="edu-school">Islamic Azad University, Qazvin · 2011–2015</p>
+                </div>
+              </div>
+              <div class="edu-row">
+                <div class="edu-icon">📐</div>
+                <div>
+                  <p class="edu-deg">B.Sc. · Computer Engineering – Software</p>
+                  <p class="edu-school">Mazandaran Institute of Technology · 2007–2009</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Research interests -->
+            <div class="info-card">
+              <h3 class="card-label">Research Interests</h3>
+              <div class="interest-grid">
+                <span>Agentic AI Systems</span>
+                <span>Physical Digital Twins</span>
+                <span>Reinforcement Learning</span>
+                <span>Neural 3D Reconstruction</span>
+                <span>Sim-to-Real Transfer</span>
+                <span>LLM Tool-Use &amp; RAG</span>
+                <span>A2A / MCP Orchestration</span>
+                <span>Multimodal Sensing</span>
+                <span>Emotion-Aware Computing</span>
+                <span>Embodied AI</span>
+                <span>XR &amp; Metaverse</span>
+                <span>Computer Vision</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PUBLICATIONS ════════════════════════════════════════ -->
+    <section class="section section-tint" id="publications">
+      <div class="wrap">
+        <div class="section-head" data-aos>
+          <span class="eyebrow">Publications</span>
+          <h2 class="section-h">Selected Research Output</h2>
+          <a href="https://scholar.google.com/citations?user=zC-HSXkAAAAJ" target="_blank" rel="noopener" class="section-more">Full list on Google Scholar ↗</a>
+        </div>
+
+        <div class="pub-list">
+
+          <div class="pub-card" data-aos>
+            <div class="pub-left">
+              <span class="pub-year">2024</span>
+              <div class="pub-venue-wrap">
+                <span class="pub-venue journal">ACM TOMM</span>
+                <span class="pub-rank">CORE A</span>
+              </div>
+            </div>
+            <div class="pub-body">
+              <h3><a href="https://dl.acm.org/doi/full/10.1145/3696109" target="_blank" rel="noopener">Meta-Review on Brain-Computer Interface (BCI) in the Metaverse</a></h3>
+              <p class="pub-authors"><strong>Gholizadeh HamlAbadi, K.</strong>, Laamarti, F., El Saddik, A.</p>
+              <p class="pub-note">First PRISMA meta-review on BCI–Metaverse integration. 42 papers analyzed. Two novel integration frameworks proposed.</p>
+            </div>
+          </div>
+
+          <div class="pub-card" data-aos>
+            <div class="pub-left">
+              <span class="pub-year">2025</span>
+              <div class="pub-venue-wrap">
+                <span class="pub-venue conf">ACM MM</span>
+                <span class="pub-rank">CORE A*</span>
+              </div>
+            </div>
+            <div class="pub-body">
+              <h3><a href="https://doi.org/10.1145/3746027.37581762" target="_blank" rel="noopener">Agent-to-Agent (A2A) Protocol Integrated Digital Twin System with AgentIQ for Multimodal AI Fitness Coaching</a></h3>
+              <p class="pub-authors"><strong>Gholizadeh HamlAbadi, K.</strong>, Vahdati, M., Laamarti, F., El Saddik, A.</p>
+            </div>
+          </div>
+
+          <div class="pub-card pub-card-award" data-aos>
+            <div class="pub-left">
+              <span class="pub-year">2025</span>
+              <div class="pub-venue-wrap">
+                <span class="pub-venue conf">ACM MSMA</span>
+                <span class="pub-award-tag">🏆 Best Student Paper</span>
+              </div>
+            </div>
+            <div class="pub-body">
+              <h3><a href="https://doi.org/10.1145/3728485.37591715" target="_blank" rel="noopener">Digital Twin AI Fitness Coach: An Intelligent Multi-Agent System for Personalized Exercise Guidance</a></h3>
+              <p class="pub-authors">Vahdati, M., <strong>Gholizadeh HamlAbadi, K.</strong>, Laamarti, F., Kumar, D., El Saddik, A.</p>
+            </div>
+          </div>
+
+          <div class="pub-card" data-aos>
+            <div class="pub-left">
+              <span class="pub-year">2025</span>
+              <div class="pub-venue-wrap">
+                <span class="pub-venue conf">ACM IMX</span>
+              </div>
+            </div>
+            <div class="pub-body">
+              <h3><a href="https://doi.org/10.1145/3706370.37316516" target="_blank" rel="noopener">A Multi-Agent Digital Twin Framework for AI-Driven Fitness Coaching</a></h3>
+              <p class="pub-authors">Vahdati, M., <strong>Gholizadeh HamlAbadi, K.</strong>, Laamarti, F., El Saddik, A.</p>
+            </div>
+          </div>
+
+          <div class="pub-card" data-aos>
+            <div class="pub-left">
+              <span class="pub-year">2025</span>
+              <div class="pub-venue-wrap">
+                <span class="pub-venue conf">IEEE MeMeA</span>
+              </div>
+            </div>
+            <div class="pub-body">
+              <h3><a href="https://doi.org/10.1109/MeMeA65319.2025.11068102" target="_blank" rel="noopener">The Potential of Olfactory Stimuli in Stress Reduction Through Virtual Reality</a></h3>
+              <p class="pub-authors">Elsaddik Valdivieso, Y., Faisal, M., Alghoul, K., Vahdati, M., <strong>Gholizadeh HamlAbadi, K.</strong>, et al.</p>
+            </div>
+          </div>
+
+          <div class="pub-card pub-card-award" data-aos>
+            <div class="pub-left">
+              <span class="pub-year">2018</span>
+              <div class="pub-venue-wrap">
+                <span class="pub-venue conf">IEEE ICWR</span>
+                <span class="pub-award-tag">🏆 Best Paper Award</span>
+              </div>
+            </div>
+            <div class="pub-body">
+              <h3>A Framework for Cognitive Internet of Things Based on Blockchain</h3>
+              <p class="pub-authors">Saghiri, A.M., Vahdati, M., <strong>Gholizadeh, K.</strong>, Meybodi, M.R., et al.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROJECTS ════════════════════════════════════════════ -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head" data-aos>
+          <span class="eyebrow">Projects</span>
+          <h2 class="section-h">Research in Action</h2>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- CARE-AI — featured -->
+          <div class="proj-card proj-featured" data-aos>
+            <div class="proj-img proj-img-care">
+              <div class="proj-img-inner">
+                <!-- CSS art: neural network nodes -->
+                <div class="art-nodes" aria-hidden="true">
+                  <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+                  <div class="node n4"></div><div class="node n5"></div><div class="node n6"></div>
+                  <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div>
+                </div>
+                <div class="proj-img-label">CARE-AI</div>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-tags">
+                <span class="ptag accent">Dissertation</span>
+                <span class="ptag green">Active</span>
+              </div>
+              <h3>CARE-AI</h3>
+              <p class="proj-sub">Coordinated, Agentic, Robust, Emotion-Aware AI</p>
+              <p class="proj-desc">Emotion-aware Digital Twin coaching framework integrating multimodal sensing, A2A/MCP multi-agent protocols, NVIDIA Omniverse avatars, and LLM-driven adaptive feedback via CrewAI and NVIDIA AgentIQ.</p>
+              <div class="proj-stack">
+                <span>NVIDIA Omniverse</span><span>Audio2Face</span><span>A2A Protocol</span><span>MCP</span><span>CrewAI</span><span>MediaPipe</span><span>PyTorch</span>
+              </div>
+              <p class="proj-venue">ACM MM '25 (A*) · ACM IMX '25</p>
+            </div>
+          </div>
+
+          <!-- NemoForge — featured -->
+          <div class="proj-card proj-featured" data-aos data-aos-delay="80">
+            <div class="proj-img proj-img-nemo">
+              <div class="proj-img-inner">
+                <!-- CSS art: 3D grid/physics -->
+                <div class="art-grid3d" aria-hidden="true">
+                  <div class="g3-plane"></div>
+                  <div class="g3-box b1"></div>
+                  <div class="g3-box b2"></div>
+                  <div class="g3-box b3"></div>
+                </div>
+                <div class="proj-img-label">NemoForge</div>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-tags">
+                <span class="ptag accent">Thesis Research</span>
+                <span class="ptag green">Active</span>
+              </div>
+              <h3>NemoForge</h3>
+              <p class="proj-sub">Post-Reconstruction Physical Rehabilitation of Neural 3D Scenes</p>
+              <p class="proj-desc">Simulator-in-the-loop RAR agentic system correcting physics violations in NeRF/3DGS/DUSt3R reconstructions. Introduces a learned stopping policy via behavioural cloning and the novel RFPCR metric.</p>
+              <div class="proj-stack">
+                <span>Isaac Sim</span><span>PhysX</span><span>DUSt3R</span><span>NeRF/Nerfacto</span><span>3DGS</span><span>LLM Agent</span><span>PyTorch</span>
+              </div>
+              <p class="proj-venue">Target submission: CVPR / ICCV / ICML 2027</p>
+            </div>
+          </div>
+
+          <!-- BCI Meta-Review -->
+          <div class="proj-card" data-aos>
+            <div class="proj-img proj-img-bci">
+              <div class="proj-img-inner">
+                <div class="art-brain" aria-hidden="true">
+                  <div class="brain-ring r1"></div><div class="brain-ring r2"></div><div class="brain-ring r3"></div>
+                  <div class="brain-dot d1"></div><div class="brain-dot d2"></div><div class="brain-dot d3"></div>
+                </div>
+                <div class="proj-img-label">BCI</div>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-tags"><span class="ptag">ACM TOMM · 2024</span><span class="ptag">Journal · CORE A</span></div>
+              <h3>BCI × Metaverse</h3>
+              <p class="proj-sub">First PRISMA Meta-Review on Brain-Computer Interfaces</p>
+              <p class="proj-desc">Analyzed 42 peer-reviewed papers on BCI–Metaverse integration. Proposed two novel frameworks covering VR, AR, XR, Digital Twins, and haptics.</p>
+              <div class="proj-stack"><span>PRISMA</span><span>BCI/EEG</span><span>XR</span><span>Digital Twins</span></div>
+            </div>
+          </div>
+
+          <!-- Olfactory VR -->
+          <div class="proj-card" data-aos data-aos-delay="80">
+            <div class="proj-img proj-img-vr">
+              <div class="proj-img-inner">
+                <div class="art-vr" aria-hidden="true">
+                  <div class="vr-headset"></div>
+                  <div class="vr-wave w1"></div><div class="vr-wave w2"></div><div class="vr-wave w3"></div>
+                </div>
+                <div class="proj-img-label">VR Study</div>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-tags"><span class="ptag">IEEE MeMeA · 2025</span></div>
+              <h3>Olfactory VR</h3>
+              <p class="proj-sub">Multisensory Well-Being in Immersive Environments</p>
+              <p class="proj-desc">Randomized study (N=30) showing olfactory stimuli significantly enhance physiological stress reduction (ECG-HRV analysis) in VR environments.</p>
+              <div class="proj-stack"><span>ECG/HRV</span><span>Meta Quest VR</span><span>Python</span></div>
+            </div>
+          </div>
+
+          <!-- LiDAR Pipeline -->
+          <div class="proj-card" data-aos>
+            <div class="proj-img proj-img-lidar">
+              <div class="proj-img-inner">
+                <div class="art-pointcloud" aria-hidden="true">
+                  <div class="pc-dot" style="left:20%;top:60%"></div><div class="pc-dot" style="left:35%;top:40%"></div>
+                  <div class="pc-dot" style="left:50%;top:25%"></div><div class="pc-dot" style="left:60%;top:45%"></div>
+                  <div class="pc-dot" style="left:75%;top:55%"></div><div class="pc-dot" style="left:45%;top:65%"></div>
+                  <div class="pc-dot" style="left:28%;top:72%"></div><div class="pc-dot" style="left:65%;top:30%"></div>
+                  <div class="pc-dot" style="left:82%;top:40%"></div><div class="pc-dot" style="left:15%;top:45%"></div>
+                  <div class="pc-dot" style="left:55%;top:75%"></div><div class="pc-dot" style="left:38%;top:55%"></div>
+                </div>
+                <div class="proj-img-label">LiDAR to USD</div>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-tags"><span class="ptag">Pipeline · 2024–25</span></div>
+              <h3>LiDAR to USD Pipeline</h3>
+              <p class="proj-sub">iPhone LiDAR to NVIDIA Omniverse</p>
+              <p class="proj-desc">End-to-end pipeline converting iPhone LiDAR point clouds to simulation-ready USD scenes via NeRF/Nerfacto for robot learning and XR environments.</p>
+              <div class="proj-stack"><span>NeRF/Nerfacto</span><span>OpenUSD</span><span>Omniverse</span></div>
+            </div>
+          </div>
+
+          <!-- Omniverse Kit -->
+          <div class="proj-card" data-aos data-aos-delay="80">
+            <div class="proj-img proj-img-kit">
+              <div class="proj-img-inner">
+                <div class="art-viewport" aria-hidden="true">
+                  <div class="vp-screen"></div>
+                  <div class="vp-cam"></div>
+                  <div class="vp-arrow"></div>
+                </div>
+                <div class="proj-img-label">Kit Extension</div>
+              </div>
+            </div>
+            <div class="proj-body">
+              <div class="proj-tags"><span class="ptag">Tool · Aug 2025</span></div>
+              <h3>Omniverse Kit Extension</h3>
+              <p class="proj-sub">Live Webcam to USD Viewport</p>
+              <p class="proj-desc">Custom NVIDIA Omniverse Kit extension streaming live webcam into a 3D USD viewport, supporting embodied AI and avatar perception pipelines.</p>
+              <div class="proj-stack"><span>Omniverse Kit SDK</span><span>OpenUSD</span><span>OpenCV</span><span>Python</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ EXPERIENCE ══════════════════════════════════════════ -->
+    <section class="section section-tint" id="experience">
+      <div class="wrap">
+        <div class="section-head" data-aos>
+          <span class="eyebrow">Experience</span>
+          <h2 class="section-h">Academic &amp; Professional Roles</h2>
+        </div>
+
+        <div class="exp-cols">
+          <!-- Timeline -->
+          <div class="exp-timeline">
+            <div class="exp-item" data-aos>
+              <div class="exp-dot"></div>
+              <div class="exp-content">
+                <span class="exp-when">Sep 2022 – Present</span>
+                <h4>Research Assistant &amp; PhD Researcher</h4>
+                <p>MCRLab, University of Ottawa</p>
+                <p class="exp-note">CARE-AI, NemoForge, multimodal AI, Digital Twins, NVIDIA Omniverse/Isaac Sim</p>
+              </div>
+            </div>
+            <div class="exp-item" data-aos>
+              <div class="exp-dot"></div>
+              <div class="exp-content">
+                <span class="exp-when">Jan 2025 – Present</span>
+                <h4>Part-Time Professor</h4>
+                <p>University of Ottawa</p>
+                <p class="exp-note">Introduction to Computing II (Java)</p>
+              </div>
+            </div>
+            <div class="exp-item" data-aos>
+              <div class="exp-dot"></div>
+              <div class="exp-content">
+                <span class="exp-when">Jan 2023 – Present</span>
+                <h4>Teaching Assistant</h4>
+                <p>University of Ottawa</p>
+                <p class="exp-note">Real-Time Systems · Computer Architecture · Cloud Technologies · Project Management · SE Capstone</p>
+              </div>
+            </div>
+            <div class="exp-item" data-aos>
+              <div class="exp-dot"></div>
+              <div class="exp-content">
+                <span class="exp-when">Oct 2017 – Sep 2022</span>
+                <h4>Software Developer &amp; Blockchain Engineer (R&amp;D)</h4>
+                <p>Sadad Informatics Corp. (SIC), Tehran</p>
+                <p class="exp-note">Open banking · Ethereum/Stellar smart contracts · KYC · Microservices (Java Spring Boot)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column: Skills + Service -->
+          <div class="exp-side">
+            <!-- Skills -->
+            <div class="skill-card" data-aos>
+              <h3 class="card-label">Technical Skills</h3>
+              <div class="skill-group">
+                <p class="sk-cat">AI &amp; ML</p>
+                <div class="sk-tags"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>OpenCV</span><span>MediaPipe</span><span>NeRF/Nerfacto</span><span>Behavioural Cloning</span></div>
+              </div>
+              <div class="skill-group">
+                <p class="sk-cat">Agentic Systems</p>
+                <div class="sk-tags"><span>A2A Protocol</span><span>MCP</span><span>CrewAI</span><span>LangSmith</span><span>NVIDIA AgentIQ</span><span>GPT / Gemini / LLaMA</span></div>
+              </div>
+              <div class="skill-group">
+                <p class="sk-cat">Simulation &amp; 3D</p>
+                <div class="sk-tags"><span>NVIDIA Isaac Sim</span><span>PhysX</span><span>MuJoCo</span><span>NVIDIA Omniverse</span><span>OpenUSD</span><span>3DGS</span><span>DUSt3R</span><span>COLMAP</span></div>
+              </div>
+              <div class="skill-group">
+                <p class="sk-cat">Programming</p>
+                <div class="sk-tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>C#</span><span>Bash</span><span>LaTeX</span></div>
+              </div>
+              <div class="skill-group">
+                <p class="sk-cat">Tools</p>
+                <div class="sk-tags"><span>Docker</span><span>PostgreSQL</span><span>pgvector</span><span>Redis</span><span>GitHub</span><span>Streamlit</span></div>
+              </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="award-card" data-aos>
+              <h3 class="card-label">Awards &amp; Honors</h3>
+              <div class="award-row"><span>🏆</span><div><strong>Best Student Paper Award</strong><br><small>MSMA '25 · ACM Multimedia · Dublin, 2025</small></div></div>
+              <div class="award-row"><span>🏆</span><div><strong>Best Paper Award</strong><br><small>IEEE ICWR · Tehran, 2018</small></div></div>
+              <div class="award-row"><span>🎓</span><div><strong>International Doctoral Scholarship</strong><br><small>University of Ottawa · 2022–Present</small></div></div>
+              <div class="award-row"><span>⭐</span><div><strong>Special Merit &amp; Admission Scholarships</strong><br><small>University of Ottawa · 2022</small></div></div>
+            </div>
+
+            <!-- Service -->
+            <div class="service-card" data-aos>
+              <h3 class="card-label">Academic Service</h3>
+              <div class="svc-row"><span class="svc-lbl">Editorial</span><span>IEEE Metaverse Newsletter (Jun 2024–Present) · ACM SIGMM Record (Mar 2026–Present)</span></div>
+              <div class="svc-row"><span class="svc-lbl">Reviewer</span><span>ACM TOMM · Telematics &amp; Informatics (Elsevier) · TMLR · SoftwareX (Elsevier) · J. Healthcare Engineering</span></div>
+              <div class="svc-row"><span class="svc-lbl">Conference</span><span>ACM IMX 2025 · EAI PerSoM 2022 · SIGGRAPH 2025 · ACM MM 2023</span></div>
+              <div class="svc-row"><span class="svc-lbl">Member</span><span>ACM · ACM SIGGRAPH · ACM SIGMM · IEEE</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ VISION ══════════════════════════════════════════════ -->
+    <section class="section vision-section" id="vision">
+      <div class="wrap">
+        <div class="vision-inner" data-aos>
+          <span class="eyebrow eyebrow-light">Research Vision</span>
+          <h2 class="vision-h">
+            Toward AI That Understands<br>
+            the Physical World
+          </h2>
+          <p class="vision-body">
+            The next decade of AI will be defined by systems that don't just process language or images
+            but that <em>act</em> in physical and virtual environments with reliability and awareness.
+            My research builds toward that future: agents that reason about geometry, correct their own
+            physics errors, sense human emotion, and adapt their behavior accordingly.
+          </p>
+          <p class="vision-body">
+            From real-to-sim pipelines for robot learning, to emotion-aware Digital Twin coaches,
+            to simulator-in-the-loop agentic correction, I am building the infrastructure for
+            physically grounded, human-centered AI.
+          </p>
+          <div class="vision-keywords">
+            <span>Sim-to-Real Transfer</span>
+            <span>Physics-Aware Agents</span>
+            <span>Embodied Intelligence</span>
+            <span>Human-Centered AI</span>
+            <span>Multimodal Reasoning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT ══════════════════════════════════════════════ -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-left" data-aos>
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-h">Open to Academic and<br>Industry Opportunities</h2>
+            <p>
+              I am actively seeking <strong>postdoctoral positions</strong> at top research universities
+              in the United States and Canada, with particular interest in groups working on
+              embodied AI, physical simulation, agentic systems, sim-to-real transfer, or
+              multimodal human–AI interaction.
+            </p>
+            <p>
+              I am equally interested in <strong>industry research and engineering roles</strong> at
+              AI labs, robotics companies, and technology organizations working on
+              agentic AI systems, Digital Twin platforms, autonomous simulation,
+              LLM reasoning and tool use, or multimodal AI products. I bring both
+              strong research depth and hands-on engineering experience in production-grade systems.
+            </p>
+            <p>I welcome conversations about collaborations, research partnerships, and visiting positions.</p>
+            <div class="contact-btns">
+              <a href="mailto:kamran.gh@uottawa.ca" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                kamran.gh@uottawa.ca
+              </a>
+              <a href="https://kamranghz.github.io/" target="_blank" rel="noopener" class="btn btn-ghost">Full CV ↗</a>
+            </div>
+
+            <!-- Opportunity type tags -->
+            <div class="contact-opps">
+              <span class="copp copp-academic">Postdoctoral Research</span>
+              <span class="copp copp-industry">Industry Research Scientist</span>
+              <span class="copp copp-industry">Applied AI Engineer</span>
+              <span class="copp copp-industry">Research Engineer</span>
+              <span class="copp copp-academic">Visiting Researcher</span>
+              <span class="copp copp-industry">AI Consultant</span>
+            </div>
+          </div>
+          <div class="contact-right" data-aos data-aos-delay="100">
+            <div class="contact-links-card">
+              <h3 class="card-label">Find Me Online</h3>
+              <div class="contact-link-list">
+                <a href="https://scholar.google.com/citations?user=zC-HSXkAAAAJ" target="_blank" rel="noopener">
+                  <span class="cl-icon">📚</span><div><strong>Google Scholar</strong><small>Publications &amp; citations</small></div><span class="cl-arr">↗</span>
+                </a>
+                <a href="https://github.com/kamranghz" target="_blank" rel="noopener">
+                  <span class="cl-icon">💻</span><div><strong>GitHub</strong><small>github.com/kamranghz</small></div><span class="cl-arr">↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kamrangh" target="_blank" rel="noopener">
+                  <span class="cl-icon">🔗</span><div><strong>LinkedIn</strong><small>linkedin.com/in/kamrangh</small></div><span class="cl-arr">↗</span>
+                </a>
+                <a href="https://dl.acm.org/profile/99661339033" target="_blank" rel="noopener">
+                  <span class="cl-icon">📄</span><div><strong>ACM Author Profile</strong><small>dl.acm.org</small></div><span class="cl-arr">↗</span>
+                </a>
+                <a href="https://orcid.org/0000-0002-4732-4745" target="_blank" rel="noopener">
+                  <span class="cl-icon">🪪</span><div><strong>ORCID</strong><small>0000-0002-4732-4745</small></div><span class="cl-arr">↗</span>
+                </a>
+                <a href="https://uniweb.uottawa.ca/members/5212" target="_blank" rel="noopener">
+                  <span class="cl-icon">🏛</span><div><strong>University Profile</strong><small>uOttawa MCRLab</small></div><span class="cl-arr">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="wrap">
+      <span>© 2026 Kamran Gholizadeh HamlAbadi · MCRLab, University of Ottawa</span>
+      <span>Built for academic excellence</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
